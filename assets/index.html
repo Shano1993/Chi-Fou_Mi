@@ -14,24 +14,30 @@
 
         <div id="player_one">
             <h2>Player One</h2>
-            <div class="choice"></div>
+            <div class="choice" id="choice_player1"></div>
         </div>
 
         <div id="choices">
-            <button>Pierre</button>
-            <button>Feuille</button>
-            <button>Ciseaux</button>
+            <button id="rock">Pierre</button>
+            <button id="sheet">Feuille</button>
+            <button id="scissors">Ciseaux</button>
         </div>
 
         <div id="player_two">
             <h2>Player Two</h2>
-            <div class="choice"></div>
+            <div class="choice" id="choice_player2"></div>
         </div>
 
         <div id="result">
-
+            <p>Score : <span id="result1"></span></p>
+            <p>Egalité : <span id="equality"></span></p>
+            <p>Score : <span id="result2"></span></p>
         </div>
 
+    </div>
+
+    <div id="bloc_won">
+        <p>Gagnant : <span id="won"></span></p>
     </div>
 
     <script src="js/app.js"></script>
