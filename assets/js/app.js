@@ -1,3 +1,4 @@
+// variable declaration
 const buttonRock = document.getElementById('rock');
 const buttonSheet = document.getElementById('sheet');
 const buttonScissors = document.getElementById('scissors');
@@ -17,6 +18,7 @@ let victory2 = 1;
 let equalityScore = 1;
 let restart = document.getElementById('restart');
 
+// button choice rock
 buttonRock.addEventListener("click", function () {
     choicePlayerOne.innerHTML = imageOne;
     choicePlayerTwo.innerHTML = array[Math.floor(Math.random() * array.length)];
@@ -24,6 +26,7 @@ buttonRock.addEventListener("click", function () {
     win();
 })
 
+// button choice sheet
 buttonSheet.addEventListener("click", function () {
     choicePlayerOne.innerHTML = imageTwo;
     choicePlayerTwo.innerHTML = array[Math.floor(Math.random() * array.length)];
@@ -31,13 +34,13 @@ buttonSheet.addEventListener("click", function () {
     win();
 })
 
+// button choice scissors
 buttonScissors.addEventListener("click", function () {
     choicePlayerOne.innerHTML = imageThree;
     choicePlayerTwo.innerHTML = array[Math.floor(Math.random() * array.length)];
     scissors();
     win();
 })
-
 
 function rock() {
     for (let i = 0; i < 1; i++) {
@@ -99,12 +102,13 @@ function win() {
     }
 }
 
+// restart game
 restart.addEventListener("click", function () {
     won.innerHTML = " ";
     scoreRound.innerHTML = " ";
-    resultPlayerOne.innerHTML = 0;
-    resultPlayerTwo.innerHTML = 0;
-    equality.innerHTML = " ";
+    resultPlayerOne.innerHTML = "0";
+    resultPlayerTwo.innerHTML = "0";
+    equality.innerHTML = "0";
     victory1 = 1;
     victory2 = 1;
     equalityScore = 1;
