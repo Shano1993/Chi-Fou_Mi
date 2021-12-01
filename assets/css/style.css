@@ -92,10 +92,29 @@ p {
     font-weight: bold;
 }
 
+#bloc_won {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #bloc_won > p {
     border: 0.1rem solid black;
     width: 50%;
     margin: 0 auto;
     text-align: center;
+    font-size: 3.5rem;
+}
+#round {
+    width: 50%;
+}
+
+#round > #score_round {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#restart {
+    margin-top: 5rem;
 }
 
